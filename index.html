@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-End Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="p-5 text-center bg-light">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm a Front-End Web Developer</h1>
+      <p class="lead">I specialize in building responsive, accessible, and scalable websites using HTML, CSS, JavaScript, and modern frameworks.</p>
+      <img src="images/profile.jpg" alt="Profile" class="img-fluid rounded-circle" width="200">
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="p-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">My Skills</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>Technology</th>
+              <th>Experience Level</th>
+              <th>Projects Used In</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML5</td>
+              <td>Advanced</td>
+              <td>All projects</td>
+            </tr>
+            <tr>
+              <td>CSS3 / SASS</td>
+              <td>Advanced</td>
+              <td>Portfolio Site, Web Apps</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermediate</td>
+              <td>Form validation, interactivity</td>
+            </tr>
+            <tr>
+              <td>Bootstrap</td>
+              <td>Intermediate</td>
+              <td>Responsive Layouts</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center p-3 bg-dark text-white">
+    &copy; 2025 Jose Pereda | All rights reserved
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

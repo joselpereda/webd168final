@@ -1,0 +1,65 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.navbar {
+  margin-bottom: 2rem;
+}
+
+#home {
+  background-color: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+#home img {
+  margin-top: 1rem;
+  border: 4px solid #0d6efd;
+}
+
+#portfolio {
+  padding: 4rem 0;
+}
+#portfolio table th, #portfolio table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#contact {
+  padding: 4rem 0;
+}
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#contact form .form-control {
+  margin-bottom: 1rem;
+}
+#contact form .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+#contact form .btn-primary:hover {
+  background-color: #0257d5;
+  border-color: #0257d5;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
