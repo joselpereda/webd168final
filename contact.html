@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Front-End Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="final/css/main.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -28,18 +28,33 @@
 
   <section class="container py-5">
     <h2 class="text-center mb-4">Contact Me</h2>
-    <form>
+    <form id="contactForm" novalidate>
       <div class="mb-3">
         <label for="name" class="form-label">Full Name</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+      <div class="mb-3">
+        <label for="source" class="form-label">How did you hear about me?</label>
+        <select class="form-control" id="source" name="source" required>
+          <option value="">Select an option</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="github">GitHub</option>
+          <option value="friend">Friend or colleague</option>
+          <option value="search">Search engine</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="invalid-feedback">Please select an option.</div>
       </div>
       <div class="mb-3">
         <label for="message" class="form-label">Message</label>
         <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+        <div class="invalid-feedback">Please enter your message.</div>
       </div>
       <button type="submit" class="btn btn-primary">Send Message</button>
     </form>
@@ -50,6 +65,17 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Custom Bootstrap validation
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    });
+  </script>
 </body>
 
 </html>
