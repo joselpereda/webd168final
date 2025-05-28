@@ -39,6 +39,11 @@ section {
   margin-bottom: 2rem;
 }
 
+/* Bold form labels */
+label {
+  font-weight: bold;
+}
+
 .table th,
 .table td {
   text-align: center;

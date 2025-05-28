@@ -40,6 +40,7 @@ section {
   padding: 4rem 0;
 }
 
+// fully justify text for each project in portfolio.html
 .portfolioproject {
   text-align: justify;
 }
@@ -47,6 +48,11 @@ section {
 // Navigation
 .navbar {
   margin-bottom: 2rem;
+}
+
+/* Bold form labels */
+label {
+  font-weight: bold;
 }
 
 // Tables
